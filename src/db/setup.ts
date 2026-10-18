@@ -66,6 +66,11 @@ try {
       order_id INTEGER REFERENCES orders(id)
     ) STRICT;
 
+    -- Existing coupon rows already store the order reference and discount rate.
+    -- This rerunnable migration also enforces at most one coupon per order.
+    CREATE UNIQUE INDEX IF NOT EXISTS coupons_redeemed_order_unique
+      ON coupons(redeemed_order_id) WHERE redeemed_order_id IS NOT NULL;
+
     COMMIT;
   `);
   console.log('Database setup complete.');

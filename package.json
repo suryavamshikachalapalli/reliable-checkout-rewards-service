@@ -1,15 +1,18 @@
 {
   "name": "reliable-checkout-rewards-service",
   "version": "1.0.0",
-  "description": "A reliable ecommerce checkout and rewards backend built with Node.js, Express, TypeScript, and PostgreSQL, featuring transactional inventory management, idempotent checkout, concurrency-safe coupon redemption, and automated testing.",
+  "description": "A reliable ecommerce checkout and rewards backend built with Node.js, Express, TypeScript, and SQLite, featuring transactional inventory management, idempotent checkout, concurrency-safe coupon redemption, and automated testing.",
   "main": "index.js",
   "scripts": {
-      "dev": "tsx watch src/server.ts",
-      "start": "tsx src/server.ts",
-      "test": "vitest run",
-      "typecheck": "tsc --noEmit",
-      "db:setup": "tsx src/db/setup.ts",
-      "db:seed": "npm run db:setup && tsx src/db/seed.ts"
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "db:setup": "tsx src/db/setup.ts",
+    "db:seed": "npm run db:setup && tsx src/db/seed.ts",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "typecheck:frontend": "npm --prefix frontend run typecheck"
   },
   "repository": {
     "type": "git",
@@ -26,13 +29,11 @@
   "dependencies": {
     "dotenv": "^18.0.8",
     "express": "^5.3.0",
-    "pg": "^8.23.1",
     "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.5",
-    "@types/pg": "^8.23.1",
     "@types/supertest": "^7.2.1",
     "supertest": "^7.3.1",
     "tsx": "^4.23.15",

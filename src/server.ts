@@ -1,5 +1,8 @@
 import "dotenv/config";
-import app from "./app";
+import { createApp } from "./app";
+import { db } from "./db/database";
+
+const app = createApp(db);
 
 const PORT = Number(process.env.PORT) || 3000;
 
