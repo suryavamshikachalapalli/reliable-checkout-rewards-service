@@ -1,0 +1,554 @@
+:root{
+  font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color: #233a33;
+  background: #f8f7f3;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5}
+  *{
+    box-sizing: border-box}
+    html{
+      scroll-behavior: smooth;
+      scroll-padding-top: 30px}
+      body{
+        margin: 0}
+        button,input{
+          font: inherit}
+          button,a,input{
+            -webkit-tap-highlight-color: transparent}
+            button{
+              cursor: pointer;
+              border: 0;
+              border-radius: 7px;
+              padding: 11px 17px;
+              font-size: .87rem;
+              font-weight: 600;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              gap: 12px;
+              transition: background .15s}
+              button:disabled{
+                opacity: .45;
+                cursor: not-allowed}
+                button:focus-visible,a:focus-visible,input:focus-visible{
+                  outline: 3px solid #b68335;
+                  outline-offset: 3px}
+                  a{
+                    color: inherit;
+                    text-decoration: none}
+                    input{
+                      background: #fff;
+                      border: 1px solid #cecfc6;
+                      border-radius: 6px;
+                      padding: 11px 12px;
+                      color: inherit;
+                      width: 100%;
+                      min-width: 0}
+                      input:disabled{
+                        background: #f2f0e9}
+                        h1,h2,h3,h4,p{
+                          margin: 0}
+                          h1,h2{
+                            font-family: Georgia,"Times New Roman",serif;
+                            font-weight: 400;
+                            letter-spacing: -.035em}
+                            h1{
+                              font-size: clamp(2.8rem,5vw,4.5rem);
+                              line-height: 1.08;
+                              margin: 15px 0 20px}
+                              h2{
+                                font-size: 2rem;
+                                line-height: 1.15}
+                                h3{
+                                  font-size: .98rem;
+                                  font-weight: 650}
+                                  h4{
+                                    font-size: .83rem;
+                                    margin: 25px 0 10px}
+                                    small{
+                                      display: block;
+                                      font-size: .76rem;
+                                      color: #6c7970;
+                                      margin-top: 4px}
+                                      .site-header{
+                                        max-width: 1280px;
+                                        margin: auto;
+                                        padding: 24px 40px;
+                                        border-bottom: 1px solid #dfe0d7;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center}
+                                        .brand{
+                                          display: flex;
+                                          align-items: center;
+                                          gap: 10px;
+                                          font-size: 1.6rem;
+                                          font-weight: 750;
+                                          letter-spacing: -.07em}
+                                          .brand-mark{
+                                            display: grid;
+                                            place-items: center;
+                                            background: #153c32;
+                                            color: #fff;
+                                            width: 38px;
+                                            height: 38px;
+                                            border-radius: 9px;
+                                            font: 28px Georgia,serif;
+                                            letter-spacing: -.08em;
+                                            padding-bottom: 5px}
+                                            .brand-note{
+                                              font-size: .55rem;
+                                              letter-spacing: .14em;
+                                              font-weight: 500;
+                                              border-left: 1px solid #cccfc4;
+                                              margin-left: 12px;
+                                              padding-left: 18px}
+                                              nav{
+                                                display: flex;
+                                                gap: 28px;
+                                                font-size: .82rem}
+                                                nav a:hover{
+                                                  text-decoration: underline}
+                                                  main{
+                                                    max-width: 1200px;
+                                                    margin: auto;
+                                                    padding: 0 40px}
+                                                    .intro{
+                                                      padding: 58px 0 55px;
+                                                      position: relative}
+                                                      .intro>p:not(.eyebrow){
+                                                        color: #6c7970;
+                                                        max-width: 440px;
+                                                        font-size: .95rem}
+                                                        .eyebrow{
+                                                          font-size: .65rem;
+                                                          font-weight: 700;
+                                                          letter-spacing: .18em;
+                                                          color: #6c7970}
+                                                          .demo-tag{
+                                                            display: inline-flex;
+                                                            align-items: center;
+                                                            gap: 7px;
+                                                            font-size: .7rem;
+                                                            border: 1px solid #d9ddce;
+                                                            border-radius: 20px;
+                                                            padding: 5px 11px;
+                                                            color: #5d6b5d;
+                                                            background: #f3f4ec}
+                                                            .intro .demo-tag{
+                                                              margin-top: 23px}
+                                                              .demo-tag>span{
+                                                                width: 6px;
+                                                                height: 6px;
+                                                                background: #789468;
+                                                                border-radius: 50%}
+                                                                .shopping-layout{
+                                                                  display: grid;
+                                                                  grid-template-columns: minmax(0,1fr) 330px;
+                                                                  gap: 35px;
+                                                                  align-items: start}
+                                                                  .section-heading{
+                                                                    display: flex;
+                                                                    justify-content: space-between;
+                                                                    align-items: center;
+                                                                    gap: 14px;
+                                                                    margin-bottom: 22px}
+                                                                    .section-heading .eyebrow{
+                                                                      margin-bottom: 8px}
+                                                                      .text-button{
+                                                                        padding: 6px 0;
+                                                                        background: transparent;
+                                                                        color: #466a59;
+                                                                        font-size: .77rem;
+                                                                        text-decoration: underline;
+                                                                        text-underline-offset: 3px}
+                                                                        .product-grid{
+                                                                          display: grid;
+                                                                          grid-template-columns: repeat(2,minmax(0,1fr));
+                                                                          gap: 18px}
+                                                                          .product{
+                                                                            overflow: hidden;
+                                                                            border-radius: 9px;
+                                                                            border: 1px solid #e0e1d8;
+                                                                            background: #fff}
+                                                                            .product-art{
+                                                                              height: 155px;
+                                                                              position: relative;
+                                                                              display: grid;
+                                                                              place-items: center;
+                                                                              background: #e7e7d9;
+                                                                              color: #768575;
+                                                                              overflow: hidden}
+                                                                              .product-art>span{
+                                                                                font: 100px Georgia,serif;
+                                                                                transform: rotate(-12deg);
+                                                                                line-height: 1;
+                                                                                text-shadow: 6px 8px 0 #ffffff50}
+                                                                                .product-art small{
+                                                                                  position: absolute;
+                                                                                  bottom: 13px;
+                                                                                  left: 16px;
+                                                                                  font-size: .52rem;
+                                                                                  letter-spacing: .13em;
+                                                                                  color: #637568}
+                                                                                  .art-1{
+                                                                                    background: #e7dfd1;
+                                                                                    color: #9c7c5d}
+                                                                                    .art-2{
+                                                                                      background: #dde7df;
+                                                                                      color: #69826f}
+                                                                                      .art-3{
+                                                                                        background: #e9e2d5;
+                                                                                        color: #9b8c6f}
+                                                                                        .art-4{
+                                                                                          background: #e6dbd5;
+                                                                                          color: #aa8273}
+                                                                                          .product-body{
+                                                                                            padding: 17px}
+                                                                                            .product-title{
+                                                                                              display: flex;
+                                                                                              justify-content: space-between;
+                                                                                              gap: 9px;
+                                                                                              align-items: start}
+                                                                                              .product-title h3{
+                                                                                                font-size: .88rem}
+                                                                                                .product-title strong{
+                                                                                                  font-size: .85rem;
+                                                                                                  white-space: nowrap}
+                                                                                                  .product-body p{
+                                                                                                    font-size: .72rem;
+                                                                                                    color: #718073;
+                                                                                                    margin: 8px 0 17px}
+                                                                                                    .product-body .low-stock{
+                                                                                                      color: #9c6a32}
+                                                                                                      .full{
+                                                                                                        width: 100%}
+                                                                                                        .secondary{
+                                                                                                          background: transparent;
+                                                                                                          border: 1px solid #b9c6b6;
+                                                                                                          color: #284d3c}
+                                                                                                          .secondary:hover:not(:disabled){
+                                                                                                            background: #eaf0e7}
+                                                                                                            .primary{
+                                                                                                              background: #173f33;
+                                                                                                              color: #fff}
+                                                                                                              .primary:hover:not(:disabled){
+                                                                                                                background: #295744}
+                                                                                                                .product button{
+                                                                                                                  justify-content: space-between;
+                                                                                                                  padding: 9px 12px;
+                                                                                                                  font-size: .76rem}
+                                                                                                                  .cart-panel{
+                                                                                                                    background: #fff;
+                                                                                                                    border: 1px solid #e0e1d8;
+                                                                                                                    border-radius: 10px;
+                                                                                                                    padding: 24px;
+                                                                                                                    position: sticky;
+                                                                                                                    top: 24px}
+                                                                                                                    .cart-panel h2{
+                                                                                                                      font-size: 1.65rem}
+                                                                                                                      .count{
+                                                                                                                        border-radius: 50%;
+                                                                                                                        background: #f1f2ea;
+                                                                                                                        min-width: 30px;
+                                                                                                                        height: 30px;
+                                                                                                                        padding: 4px 8px;
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: .8rem}
+                                                                                                                        .cart-meta{
+                                                                                                                          display: flex;
+                                                                                                                          justify-content: space-between;
+                                                                                                                          align-items: center;
+                                                                                                                          font-size: .75rem;
+                                                                                                                          color: #6b786b}
+                                                                                                                          .pill{
+                                                                                                                            border-radius: 4px;
+                                                                                                                            background: #eaf1e7;
+                                                                                                                            padding: 3px 7px;
+                                                                                                                            color: #4b6b43;
+                                                                                                                            font-size: .65rem}
+                                                                                                                            .empty{
+                                                                                                                              padding: 25px 0;
+                                                                                                                              color: #7c8375;
+                                                                                                                              font-size: .85rem;
+                                                                                                                              line-height: 1.8}
+                                                                                                                              .cart-items,.receipt-items,.coupon-list,.quantities{
+                                                                                                                                list-style: none;
+                                                                                                                                margin: 0;
+                                                                                                                                padding: 0}
+                                                                                                                                .cart-items>li{
+                                                                                                                                  padding: 18px 0;
+                                                                                                                                  border-bottom: 1px solid #ecece4}
+                                                                                                                                  .cart-item-top{
+                                                                                                                                    display: flex;
+                                                                                                                                    justify-content: space-between;
+                                                                                                                                    gap: 10px;
+                                                                                                                                    font-size: .8rem}
+                                                                                                                                    .cart-item-top strong{
+                                                                                                                                      font-weight: 600}
+                                                                                                                                      .cart-item-actions{
+                                                                                                                                        display: flex;
+                                                                                                                                        justify-content: space-between;
+                                                                                                                                        align-items: center;
+                                                                                                                                        margin-top: 12px;
+                                                                                                                                        gap: 10px}
+                                                                                                                                        .cart-item-actions form{
+                                                                                                                                          display: flex;
+                                                                                                                                          align-items: center;
+                                                                                                                                          gap: 10px}
+                                                                                                                                          .cart-item-actions input{
+                                                                                                                                            width: 78px;
+                                                                                                                                            padding: 5px 7px;
+                                                                                                                                            font-size: .8rem}
+                                                                                                                                            .remove{
+                                                                                                                                              color: #8a6d58}
+                                                                                                                                              .total-row{
+                                                                                                                                                display: flex;
+                                                                                                                                                justify-content: space-between;
+                                                                                                                                                align-items: center;
+                                                                                                                                                gap: 12px;
+                                                                                                                                                padding: 21px 0 10px;
+                                                                                                                                                font-size: .9rem}
+                                                                                                                                                .total-row strong{
+                                                                                                                                                  font-size: 1.1rem}
+                                                                                                                                                  .hint{
+                                                                                                                                                    font-size: .76rem;
+                                                                                                                                                    color: #737e70;
+                                                                                                                                                    line-height: 1.7;
+                                                                                                                                                    margin: 10px 0 18px}
+                                                                                                                                                    .error{
+                                                                                                                                                      color: #8a362d;
+                                                                                                                                                      background: #fff0eb;
+                                                                                                                                                      border: 1px solid #f0c8bc;
+                                                                                                                                                      border-radius: 6px;
+                                                                                                                                                      padding: 12px 14px;
+                                                                                                                                                      margin: 12px 0;
+                                                                                                                                                      font-size: .82rem;
+                                                                                                                                                      overflow-wrap: anywhere}
+                                                                                                                                                      .checkout-section{
+                                                                                                                                                        margin-top: 65px;
+                                                                                                                                                        border-top: 1px solid #d9ded1;
+                                                                                                                                                        padding: 40px 0;
+                                                                                                                                                        display: grid;
+                                                                                                                                                        grid-template-columns: 1fr 1fr;
+                                                                                                                                                        gap: 70px;
+                                                                                                                                                        align-items: start}
+                                                                                                                                                        .checkout-intro h2{
+                                                                                                                                                          font-size: 2.7rem;
+                                                                                                                                                          margin: 14px 0}
+                                                                                                                                                          .checkout-intro>p:not(.eyebrow){
+                                                                                                                                                            font-size: .9rem;
+                                                                                                                                                            color: #6c7970}
+                                                                                                                                                            .checkout-intro .hint{
+                                                                                                                                                              max-width: 250px;
+                                                                                                                                                              font-size: .76rem!important}
+                                                                                                                                                              .checkout-card{
+                                                                                                                                                                background: #fff;
+                                                                                                                                                                border: 1px solid #e0e1d8;
+                                                                                                                                                                border-radius: 10px;
+                                                                                                                                                                padding: 28px}
+                                                                                                                                                                .checkout-card label{
+                                                                                                                                                                  font-size: .83rem;
+                                                                                                                                                                  font-weight: 600;
+                                                                                                                                                                  display: block;
+                                                                                                                                                                  margin-bottom: 10px}
+                                                                                                                                                                  .optional{
+                                                                                                                                                                    color: #8b9185;
+                                                                                                                                                                    font-size: .73rem;
+                                                                                                                                                                    font-weight: 400;
+                                                                                                                                                                    margin-left: 5px}
+                                                                                                                                                                    .retry-note{
+                                                                                                                                                                      font-size: .76rem;
+                                                                                                                                                                      background: #f4f2df;
+                                                                                                                                                                      border-radius: 6px;
+                                                                                                                                                                      padding: 12px;
+                                                                                                                                                                      margin-bottom: 16px;
+                                                                                                                                                                      line-height: 1.7}
+                                                                                                                                                                      .success{
+                                                                                                                                                                        font-size: .76rem;
+                                                                                                                                                                        color: #467543;
+                                                                                                                                                                        margin-bottom: 9px}
+                                                                                                                                                                        .checkout-card h3{
+                                                                                                                                                                          font: 1.8rem Georgia,serif}
+                                                                                                                                                                          .receipt-items>li{
+                                                                                                                                                                            display: flex;
+                                                                                                                                                                            justify-content: space-between;
+                                                                                                                                                                            gap: 12px;
+                                                                                                                                                                            padding: 12px 0;
+                                                                                                                                                                            border-bottom: 1px solid #e9ece2;
+                                                                                                                                                                            font-size: .85rem}
+                                                                                                                                                                            .receipt-totals>div{
+                                                                                                                                                                              display: flex;
+                                                                                                                                                                              justify-content: space-between;
+                                                                                                                                                                              gap: 12px;
+                                                                                                                                                                              font-size: .83rem;
+                                                                                                                                                                              margin-top: 14px}
+                                                                                                                                                                              .receipt-totals .grand-total{
+                                                                                                                                                                                border-top: 1px solid #d5dbcd;
+                                                                                                                                                                                padding-top: 16px;
+                                                                                                                                                                                margin-top: 18px;
+                                                                                                                                                                                font-size: 1.2rem}
+                                                                                                                                                                                code{
+                                                                                                                                                                                  font-family: ui-monospace,monospace;
+                                                                                                                                                                                  overflow-wrap: anywhere}
+                                                                                                                                                                                  .admin-section{
+                                                                                                                                                                                    margin: 20px 0 45px;
+                                                                                                                                                                                    padding: 30px;
+                                                                                                                                                                                    background: #f0f0e7;
+                                                                                                                                                                                    border: 1px solid #e0e1d5;
+                                                                                                                                                                                    border-radius: 12px}
+                                                                                                                                                                                    .admin-section .section-heading{
+                                                                                                                                                                                      margin-bottom: 15px}
+                                                                                                                                                                                      .admin-notice{
+                                                                                                                                                                                        font-size: .77rem;
+                                                                                                                                                                                        color: #7b7256}
+                                                                                                                                                                                        .admin-actions{
+                                                                                                                                                                                          display: flex;
+                                                                                                                                                                                          gap: 12px;
+                                                                                                                                                                                          flex-wrap: wrap;
+                                                                                                                                                                                          margin: 22px 0}
+                                                                                                                                                                                          .admin-layout{
+                                                                                                                                                                                            display: grid;
+                                                                                                                                                                                            grid-template-columns: 1fr 1fr;
+                                                                                                                                                                                            gap: 40px;
+                                                                                                                                                                                            padding-top: 22px;
+                                                                                                                                                                                            border-top: 1px solid #d8ddcf}
+                                                                                                                                                                                            .admin-layout h3{
+                                                                                                                                                                                              margin-bottom: 15px}
+                                                                                                                                                                                              .coupon-list>li{
+                                                                                                                                                                                                padding: 14px;
+                                                                                                                                                                                                background: #fff;
+                                                                                                                                                                                                border: 1px dashed #b8c3aa;
+                                                                                                                                                                                                border-radius: 7px;
+                                                                                                                                                                                                margin-bottom: 10px}
+                                                                                                                                                                                                .coupon-list strong{
+                                                                                                                                                                                                  font-size: .9rem}
+                                                                                                                                                                                                  .coupon-list code{
+                                                                                                                                                                                                    display: block;
+                                                                                                                                                                                                    font-size: .73rem;
+                                                                                                                                                                                                    margin-top: 10px}
+                                                                                                                                                                                                    .metrics{
+                                                                                                                                                                                                      display: grid;
+                                                                                                                                                                                                      grid-template-columns: 1fr 1fr;
+                                                                                                                                                                                                      gap: 18px;
+                                                                                                                                                                                                      margin: 0}
+                                                                                                                                                                                                      .metrics dt{
+                                                                                                                                                                                                        font-size: .7rem;
+                                                                                                                                                                                                        color: #6c7970}
+                                                                                                                                                                                                        .metrics dd{
+                                                                                                                                                                                                          margin: 4px 0 0;
+                                                                                                                                                                                                          font-size: 1.5rem;
+                                                                                                                                                                                                          letter-spacing: -.03em}
+                                                                                                                                                                                                          .coupon-counts{
+                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                            flex-wrap: wrap;
+                                                                                                                                                                                                            gap: 13px;
+                                                                                                                                                                                                            margin-top: 25px;
+                                                                                                                                                                                                            font-size: .68rem}
+                                                                                                                                                                                                            .coupon-counts strong{
+                                                                                                                                                                                                              margin-left: 4px}
+                                                                                                                                                                                                              .quantities li{
+                                                                                                                                                                                                                display: flex;
+                                                                                                                                                                                                                justify-content: space-between;
+                                                                                                                                                                                                                gap: 12px;
+                                                                                                                                                                                                                font-size: .8rem;
+                                                                                                                                                                                                                padding: 7px 0;
+                                                                                                                                                                                                                border-bottom: 1px solid #dde0d4}
+                                                                                                                                                                                                                footer{
+                                                                                                                                                                                                                  border-top: 1px solid #dfe0d7;
+                                                                                                                                                                                                                  padding: 25px 0 35px;
+                                                                                                                                                                                                                  font-size: 1.1rem;
+                                                                                                                                                                                                                  font-weight: 700;
+                                                                                                                                                                                                                  display: flex;
+                                                                                                                                                                                                                  justify-content: space-between;
+                                                                                                                                                                                                                  gap: 15px}
+                                                                                                                                                                                                                  footer span{
+                                                                                                                                                                                                                    font-size: .69rem;
+                                                                                                                                                                                                                    font-weight: 400;
+                                                                                                                                                                                                                    color: #7b8376}
+                                                                                                                                                                                                                    .sr-only{
+                                                                                                                                                                                                                      position: absolute;
+                                                                                                                                                                                                                      width: 1px;
+                                                                                                                                                                                                                      height: 1px;
+                                                                                                                                                                                                                      padding: 0;
+                                                                                                                                                                                                                      margin: -1px;
+                                                                                                                                                                                                                      overflow: hidden;
+                                                                                                                                                                                                                      clip: rect(0,0,0,0);
+                                                                                                                                                                                                                      white-space: nowrap;
+                                                                                                                                                                                                                      border: 0}
+                                                                                                                                                                                                                      @media(min-width:1100px){
+                                                                                                                                                                                                                        .intro .demo-tag{
+                                                                                                                                                                                                                          position: absolute;
+                                                                                                                                                                                                                          right: 0;
+                                                                                                                                                                                                                          bottom: 60px}
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                        @media(max-width:900px){
+                                                                                                                                                                                                                          .shopping-layout{
+                                                                                                                                                                                                                            grid-template-columns: minmax(0,1fr) 290px;
+                                                                                                                                                                                                                            gap: 22px}
+                                                                                                                                                                                                                            .cart-panel{
+                                                                                                                                                                                                                              padding: 20px}
+                                                                                                                                                                                                                              .product-title{
+                                                                                                                                                                                                                                display: block}
+                                                                                                                                                                                                                                .product-title strong{
+                                                                                                                                                                                                                                  display: block;
+                                                                                                                                                                                                                                  margin-top: 5px}
+                                                                                                                                                                                                                                  .checkout-section{
+                                                                                                                                                                                                                                    gap: 30px}
+                                                                                                                                                                                                                                    .brand-note{
+                                                                                                                                                                                                                                      display: none}
+                                                                                                                                                                                                                                      .section-heading{
+                                                                                                                                                                                                                                        flex-wrap: wrap}
+                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                      @media(max-width:700px){
+                                                                                                                                                                                                                                        main{
+                                                                                                                                                                                                                                          padding: 0 20px}
+                                                                                                                                                                                                                                          .site-header{
+                                                                                                                                                                                                                                            padding: 18px 20px}
+                                                                                                                                                                                                                                            .brand{
+                                                                                                                                                                                                                                              font-size: 1.3rem}
+                                                                                                                                                                                                                                              nav{
+                                                                                                                                                                                                                                                gap: 15px;
+                                                                                                                                                                                                                                                font-size: .72rem}
+                                                                                                                                                                                                                                                .intro{
+                                                                                                                                                                                                                                                  padding: 40px 0}
+                                                                                                                                                                                                                                                  .shopping-layout,.checkout-section,.admin-layout{
+                                                                                                                                                                                                                                                    grid-template-columns: 1fr}
+                                                                                                                                                                                                                                                    .cart-panel{
+                                                                                                                                                                                                                                                      position: static;
+                                                                                                                                                                                                                                                      margin-top: 10px}
+                                                                                                                                                                                                                                                      .product-grid{
+                                                                                                                                                                                                                                                        gap: 12px}
+                                                                                                                                                                                                                                                        .product-art{
+                                                                                                                                                                                                                                                          height: 125px}
+                                                                                                                                                                                                                                                          .product-body{
+                                                                                                                                                                                                                                                            padding: 13px}
+                                                                                                                                                                                                                                                            .product-title h3{
+                                                                                                                                                                                                                                                              font-size: .8rem}
+                                                                                                                                                                                                                                                              .checkout-section{
+                                                                                                                                                                                                                                                                margin-top: 40px;
+                                                                                                                                                                                                                                                                padding-top: 30px;
+                                                                                                                                                                                                                                                                gap: 20px}
+                                                                                                                                                                                                                                                                .checkout-card{
+                                                                                                                                                                                                                                                                  padding: 22px}
+                                                                                                                                                                                                                                                                  .admin-section{
+                                                                                                                                                                                                                                                                    padding: 22px}
+                                                                                                                                                                                                                                                                    .admin-layout{
+                                                                                                                                                                                                                                                                      gap: 25px}
+                                                                                                                                                                                                                                                                      .admin-actions button{
+                                                                                                                                                                                                                                                                        flex: 1}
+                                                                                                                                                                                                                                                                        .admin-section h2{
+                                                                                                                                                                                                                                                                          font-size: 1.75rem}
+                                                                                                                                                                                                                                                                          footer{
+                                                                                                                                                                                                                                                                            flex-direction: column;
+                                                                                                                                                                                                                                                                            gap: 5px}
+                                                                                                                                                                                                                                                                            .product-art>span{
+                                                                                                                                                                                                                                                                              font-size: 80px}
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                            @media(prefers-reduced-motion:reduce){
+                                                                                                                                                                                                                                                                              html{
+                                                                                                                                                                                                                                                                                scroll-behavior: auto}
+                                                                                                                                                                                                                                                                                button{
+                                                                                                                                                                                                                                                                                  transition: none}
+                                                                                                                                                                                                                                                                                }
